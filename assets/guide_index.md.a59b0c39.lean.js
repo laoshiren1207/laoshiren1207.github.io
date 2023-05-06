@@ -1,0 +1,1 @@
+import{_ as e,o,c as t,a as c}from"./app.303cfecc.js";const f=JSON.parse('{"title":"\u6307\u5F15","description":"","frontmatter":{},"headers":[],"relativePath":"guide/index.md","lastUpdated":1680763907000}'),d={name:"guide/index.md"},a=c("",8),s=[a];function p(i,n,r,_,l,h){return o(),t("div",null,s)}const m=e(d,[["render",p]]);export{f as __pageData,m as default};
