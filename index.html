@@ -1,20 +1,29 @@
 <!doctype html>
 <html lang="zh-CN">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Klee</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
-  </style>
-  <script type="module" crossorigin src="/assets/index-D3sT630Y.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CF5sIhyq.css">
-</head>
-
-<body>
-  <div id="root"></div>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090d12" />
+    <meta name="description" content="Codex 额度重置与重置卡发放记录" />
+    <title>Codex 重置监控</title>
+    <script>
+      ;(() => {
+        try {
+          const preference = localStorage.getItem('codex-reset-theme') || 'system'
+          const theme = preference === 'system'
+            ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+            : preference
+          document.documentElement.dataset.theme = theme
+          document.documentElement.style.colorScheme = theme
+        } catch {
+          document.documentElement.dataset.theme = 'dark'
+        }
+      })()
+    </script>
+    <script type="module" crossorigin src="/assets/index-D7l_0eFC.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DKM0F0uy.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
 </html>
